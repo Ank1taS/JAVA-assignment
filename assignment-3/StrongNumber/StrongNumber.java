@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 class StrongNumber 
 {
-    int calculateStrong(int num)
+    static int calculateStrong(int num)
     {
         int sum = 0;
         while(num != 0)
@@ -29,8 +29,7 @@ class StrongNumber
         System.out.print("Enter the number =  ");
         int num1 = input.nextInt();
 
-        StrongNumber obj = new StrongNumber();
-        int num2 = obj.calculateStrong(num1);
+        int num2 = calculateStrong(num1);
         
         if(num1 == num2)
         {
@@ -40,6 +39,7 @@ class StrongNumber
         {
             System.out.println(num2 + " is not a strong number...");
         }
+        input.close();
     }
     
 }

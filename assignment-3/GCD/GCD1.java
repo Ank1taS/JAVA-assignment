@@ -8,7 +8,7 @@ import java.io.IOException;
 
 class GCD1 
 {
-    int calculateGCD(int n1, int n2)
+    static int calculateGCD(int n1, int n2)
     {
         int c ;
         while((c = n1 % n2) != 0)
@@ -29,8 +29,7 @@ class GCD1
         System.out.print("Enter number2 =  ");
         int num2 = Integer.parseInt(inputBuf.readLine());
 
-        GCD1 obj = new GCD1();
-        System.out.println("GCD of " + num1 + " and " + num2 + " = " + obj.calculateGCD(num1, num2));
+        System.out.println("GCD of " + num1 + " and " + num2 + " = " + calculateGCD(num1, num2));
     }
     
 }

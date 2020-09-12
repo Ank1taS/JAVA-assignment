@@ -10,7 +10,7 @@ class FibonacyNumers1
 {
     static int x = 1, y = 0;
     
-    void printFibonacy()
+    static void printFibonacy()
     {
         System.out.println(y);
         y = x - y;
@@ -23,12 +23,11 @@ class FibonacyNumers1
         System.out.println("Enter n (To find first n fibonacy number) : ");
         int num = Integer.parseInt(inputBuf.readLine());
 
-        FibonacyNumers1 obj = new FibonacyNumers1();
 
         System.out.println("\t\tFIBONACY SERIES Till " + num);
         for(int i = 0; i < num; ++i)
         {
-            obj.printFibonacy();
+            printFibonacy();
 
         }
     }    

@@ -1,4 +1,4 @@
-// programe to list primrs numbers betten 2 numbers
+// programe to list primrs numbers betten 2 numbers(declaring obj of main class)
 // file name    : PrimeList.java
 // Date         : 09/09/2020
 
@@ -8,7 +8,7 @@ import java.io.IOException;
 
 class PrimeList
 {
-    static void checkPrime(int n1, int n2)
+    void checkPrime(int n1, int n2)
     {
         System.out.println("Prime numbers are :");
         for(int i = n1; i <= n2; ++i)
@@ -41,8 +41,8 @@ class PrimeList
         System.out.println("Enter 2st number ");
         int num2 = Integer.parseInt(input.readLine());
 
-    //    PrimeList obj;
+        PrimeList obj = new PrimeList();
 
-        checkPrime(num1, num2);
+        obj.checkPrime(num1, num2);
     }
 }

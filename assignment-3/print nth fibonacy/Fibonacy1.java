@@ -5,7 +5,7 @@
 
 class Fibonacy1 
 {
-    int printFibonacy(int num)
+    static int printFibonacy(int num)
     {
         int x = 1, y = 0;
         for(int i = 0; i < num - 1; ++i)
@@ -23,8 +23,7 @@ class Fibonacy1
             System.exit(1);
         }
         int n = Integer.parseInt(args[0]);
-        Fibonacy1 obj = new Fibonacy1();
 
-        System.out.println(n + "th fibanacy number in fibonacy series is = " + obj.printFibonacy(n));
+        System.out.println(n + "th fibanacy number in fibonacy series is = " + printFibonacy(n));
     }    
 }
