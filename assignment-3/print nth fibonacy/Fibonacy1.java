@@ -10,10 +10,14 @@ class Fibonacy1
         int x = 1, y = 0;
         for(int i = 0; i < num - 1; ++i)
         {
+            if(i == num)
+            {
+                return y;
+            }
             y = x - y;
             x += y;
         }
-        return y;
+        return -1;
     }
     public static void main(String args[])
     {
