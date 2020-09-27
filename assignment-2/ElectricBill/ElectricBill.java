@@ -25,19 +25,8 @@ class CalculateBill
     }
 
 
-/*
-    void update(int range)
+    float show()
     {
-        restUnit -= range;
-        price += range * 4.5;
-    }
-*/
-    void show()
-    {
-//        System.out.println(finalUnit);
-//        System.out.println(restUnit);
-
-//        System.out.println(price);
 
         System.out.println("Slot #1 \n\t 50 units \t\t\t\t" + price);
         totalprice += price;
@@ -48,11 +37,8 @@ class CalculateBill
             price = 100 * (float)4.5;
             totalprice += price;
 
-//            System.out.println(price);
-//            System.out.println(restUnit);
 
             System.out.println("Slot #2 \n\t 100 units \t\t\t\t" + price);
-//            System.out.println(restUnit);
 
             if(restUnit >= 200)
             {
@@ -99,15 +85,15 @@ class CalculateBill
             totalprice += price;
 
             System.out.println("Slot #2 \n\t 100 units \t\t\t\t" + price);
-
         }
+        return totalprice;
     }
 }
 class ElectricBill
 {
     public static void main(String args[])throws IOException
     {
-
+        float price;
         InputStreamReader is = new InputStreamReader(System.in);
         BufferedReader input = new BufferedReader(is);
  
@@ -115,8 +101,9 @@ class ElectricBill
         int units = Integer.parseInt(input.readLine());
 
         CalculateBill obj = new CalculateBill(units);
-        System.out.println("Total unit consumed = " + units);
-
-        obj.show();
+        System.out.println("\nTotal unit consumed = " + units);
+        price = obj.show();
+        System.out.println("---------------------------------------------------------");
+        System.out.println("Total price \t\t\t\t\t" + price);
     }
 }
