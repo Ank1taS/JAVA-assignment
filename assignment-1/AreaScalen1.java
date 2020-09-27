@@ -1,4 +1,4 @@
-// to find the are of a scalen triangle whose are is given as command line argumwnt
+// to find the area of a scalen triangle whose sides are is given as command line argument
 
 
 class AreaScalen1
