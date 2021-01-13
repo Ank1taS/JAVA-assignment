@@ -2,13 +2,12 @@
 // file name    : Fibonacy1.java
 // date         : 10/09/2020
 
-
 class Fibonacy1 
 {
     static int printFibonacy(int num)
     {
         int x = 1, y = 0;
-        for(int i = 0; i < num - 1; ++i)
+        for(int i = 1; i <= num ; ++i)
         {
             if(i == num)
             {
@@ -18,6 +17,7 @@ class Fibonacy1
             x += y;
         }
         return -1;
+        
     }
     public static void main(String args[])
     {
