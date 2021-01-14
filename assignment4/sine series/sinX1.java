@@ -24,11 +24,11 @@ class sinX1
     }
 
     // to calculate sin(x)
-    static double Calculate(int n, float degree)
+    static float Calculate(int n, float degree)
     {
         int sign = 1, j = 1, temp;
-        double sum = 0;
-        double radian = degree * (Math.PI / 180);
+        float sum = 0;
+        float radian = degree * (float) (Math.PI / 180);
 
         for (int i = 0; i < n; ++i)
         {
@@ -51,6 +51,6 @@ class sinX1
         float degree = Float.parseFloat(buf.readLine());
 
         // to calculate sin(x)
-        System.out.println("sin(" + degree +") = " + Calculate(num, degree));
+        System.out.printf("sin(%.3f) = %.5f", degree, Calculate(num, degree));
     }
 }
