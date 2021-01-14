@@ -1,5 +1,5 @@
-// programe to list primrs numbers betten 2 numbers(declaring obj of main class)
-// file name    : PrimeList.java
+// programe to list prime numbers between 2 numbers(declaring obj of main class)
+// file name    : PrimeList1.java
 // Date         : 09/09/2020
 
 import java.io.BufferedReader;
