@@ -6,14 +6,14 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
-class PrimeList
+class PrimeList1
 {
     void checkPrime(int n1, int n2)
     {
         System.out.println("Prime numbers are :");
         for(int i = n1; i <= n2; ++i)
         {       
-             int count = 0;
+            int count = 0;
 
             for(int j = 1; j <= i; ++j)
             {
