@@ -13,6 +13,7 @@ class FibonacyPyramid1
             y = x - y;
             x += y;
         }
+
         System.out.print("\n");
     }
     public static void main(String args[])
@@ -27,7 +28,7 @@ class FibonacyPyramid1
         {
             printFibonacy(i);
         }
+
         input.close();
-    } 
-    
+    }   
 }
