@@ -27,5 +27,6 @@ class FloidsTriangle1
         System.out.println("========= Floid's PYRAMID =========\n ");
         printPyramid(linenum);
   
+        input.close();
     }
 }
