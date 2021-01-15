@@ -1,6 +1,6 @@
 /* 
-    TO find sin(x) for given x
-    file name   :   sinx1.java
+    To find sine(x) for given x
+    file name   :   SineX1.java
     date        :   14/09/2020
 */
 
@@ -8,7 +8,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
-class sinX1
+class SineX1
 {
     // to find the factorial of divisor terms
     static int fact(int n)
@@ -24,7 +24,7 @@ class sinX1
     }
 
     // to calculate sin(x)
-    static float Calculate(int n, float degree)
+    static float calculate(int n, float degree)
     {
         int sign = 1, j = 1, temp;
         float sum = 0;
@@ -38,9 +38,10 @@ class sinX1
             sign *= -1;
             j += 2;
         }
+        
         return sum;
     }
-    public static void main(String args[])throws IOException
+    public static void main(String args[]) throws IOException
     {
         BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
 
@@ -51,6 +52,6 @@ class sinX1
         float degree = Float.parseFloat(buf.readLine());
 
         // to calculate sin(x)
-        System.out.printf("sin(%.3f) = %.5f", degree, Calculate(num, degree));
+        System.out.printf("sin(%.3f) = %.5f", degree, calculate(num, degree));
     }
 }

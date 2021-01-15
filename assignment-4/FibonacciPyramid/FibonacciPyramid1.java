@@ -1,12 +1,13 @@
-// to print a pyramid of fibonacy series
+// to print a pyramid of fibonacci series
 
 import java.util.Scanner;
 
-class FibonacyPyramid1 
+class FibonacciPyramid1 
 {
-    static void printFibonacy(int n)
+    static void printFibonacci(int n)
     {
         int x = 1, y = 0;
+        
         for(int i = 1; i <= n; ++i)
         {
             System.out.print(y + " ");
@@ -20,13 +21,13 @@ class FibonacyPyramid1
     {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter the numbers of lines : ");
+        System.out.print("Enter the numbers of lines : ");
         int linenum = input.nextInt();
 
-        System.out.println("  PYRAMID \n ");
+        System.out.println("  PYRAMID\n");
         for(int i = 1; i < linenum + 1; ++i)
         {
-            printFibonacy(i);
+            printFibonacci(i);
         }
 
         input.close();
