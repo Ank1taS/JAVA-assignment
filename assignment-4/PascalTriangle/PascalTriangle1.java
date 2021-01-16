@@ -26,7 +26,7 @@ class PascalTriangle1
         return fact;
     } 
 
-    public static void main(String args[])throws IOException
+    public static void main(String args[]) throws IOException
     {
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 
@@ -48,7 +48,7 @@ class PascalTriangle1
                 System.out.printf("%6d",factorial(row) / (factorial(pos) * factorial(row - pos)));
             }
 
-            System.out.print("\n");
+            System.out.println();
         }
     }
 }

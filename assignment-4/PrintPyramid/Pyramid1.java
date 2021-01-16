@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class Pyramid1
 {
-    static void PrintPyramid(int n)
+    static void printPyramid(int n)
     {
         for(int i = 1; i <= n; ++i)
         {
@@ -47,10 +47,10 @@ class Pyramid1
     public static void main(String args[])
     {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter a number = ");
+        System.out.print("Enter a number = ");
         int line = input.nextInt();
         
-        PrintPyramid(line);
+        printPyramid(line);
 
         input.close();
     }
