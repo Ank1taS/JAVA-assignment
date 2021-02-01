@@ -59,21 +59,21 @@ class Square extends Shape
 
 class Circle extends Shape
 {
-    float radious;
+    float radius;
 
-    Circle(float radious)
+    Circle(float radius)
     {
-        this.radious = radious;
+        this.radius = radius;
     }
 
     double perimeter()
     {
-        return (2 * Math.PI * radious);
+        return (2 * Math.PI * radius);
     }
 
     double area()
     {
-        return (Math.PI * (radious * radious));
+        return (Math.PI * (radius * radius));
     }
 }
 
