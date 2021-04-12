@@ -10,6 +10,7 @@ class AmstrongNumber
     {
         int rem, sum = 0;
         int number = num;
+        
         while(number != 0)
         {
             rem = number % 10;
@@ -40,5 +41,7 @@ class AmstrongNumber
         {
             System.out.println(num + " is not an amstrong number.");
         }
+
+        input.close();
     }
 }
