@@ -1,4 +1,4 @@
-// programe to print n numbers of fibonacy numbers
+// program to print n numbers of fibonacci numbers
 // fila name    : FibonacyNumers2.java
 // date         : 10/09/2020
 
@@ -6,9 +6,9 @@ import java.io.InputStreamReader;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-class FibonacyNumers2
+class FibonacciNumbers2
 {   
-    static void printFibonacy(int n)
+    static void printFibonacci(int n)
     {
         int x = 1, y = 0;
         for(int i = 0; i < n; ++i)
@@ -18,15 +18,15 @@ class FibonacyNumers2
             x += y;
         }
     }
-    public static void main(String args[])throws IOException
+    public static void main(String args[]) throws IOException
     {
         BufferedReader inputBuf = new BufferedReader( new InputStreamReader(System.in));
 
-        System.out.println("Enter n (To find first n fibonacy number) : ");
+        System.out.println("Enter n (To find first n fibonacci number) : ");
         int num = Integer.parseInt(inputBuf.readLine());
 
-        System.out.println("\t\tFIBONACY SERIES Till " + num);
-        printFibonacy(num);
+        System.out.println("\t\tFIBONACCI SERIES TILL " + num);
+        printFibonacci(num);
 
     }    
 }

@@ -1,10 +1,10 @@
-// programe to print nth fibonacy number while taking input as command line argument
+// program to print nth fibonacci number while taking input as command line argument
 // file name    : Fibonacy1.java
 // date         : 10/09/2020
 
-class Fibonacy1 
+class Fibonacci1 
 {
-    static int printFibonacy(int num)
+    static int printFibonacci(int num)
     {
         int x = 1, y = 0;
         for(int i = 1; i <= num ; ++i)
@@ -27,6 +27,6 @@ class Fibonacy1
         }
         int n = Integer.parseInt(args[0]);
 
-        System.out.println(n + "th fibanacy number in fibonacy series is = " + printFibonacy(n));
+        System.out.println(n + "th fibonacci number in fibonacci series is = " + printFibonacci(n));
     }    
 }
