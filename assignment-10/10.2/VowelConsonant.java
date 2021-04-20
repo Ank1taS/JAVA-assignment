@@ -1,5 +1,5 @@
 /*
-    programe name   :   to count numbers of vowel and consonant 
+    programe name    :   to count numbers of vowel and consonant. 
     file name       :   VowelConsonant1.java
     date            :   14/10/2020
 */
