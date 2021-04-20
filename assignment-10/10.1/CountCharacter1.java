@@ -1,4 +1,4 @@
-/* programe name    :   to count the total numbers of character in a string
+/*  program name    :   to count the total numbers of character in a string
     file            :   CountCharacter1.java
     date            :   14/10/2020
 */
