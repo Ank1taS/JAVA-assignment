@@ -1,6 +1,6 @@
-/*  programe name   :   to insert 1 book record into data base with run time input
-    file name       :   InsertRecord1.java
-    date            :
+/*  program name   :   to insert 1 book record into data base with run time input
+    file name      :   InsertRecord1.java
+    date           :
 */
 
 import java.sql.*;
